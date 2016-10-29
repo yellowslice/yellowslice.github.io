@@ -13,30 +13,30 @@
 	<![endif]-->
 </head>
 <body>
-	<a href="http://yellowslice.in" class="logo"><img src="img/logo.png"> </a>
+	<a href="http://yellowslice.in" class="logo"><img src="img/logo.png" alt="Yellow Slice"></a>
 	<div class="full-page">
 		<div class="tabs active divContainer" id="introTab">
 			<!-- Intro -->
 			<div class="introLogo">
-				<img src="img/game.png">
+				<img src="img/game.png" alt="Start Game">
 			</div>
 			<div class="clearfix" style="margin-bottom:50px;">
 				<div class="divHalf">
-					<img src="img/introI.png" class="shake imgCenter">
+					<img src="img/introI.png" class="shake imgCenter" alt="Shake Image">
 				</div>
 				<div class="divHalf">
-					<img src="img/introT.png" class="imgCenter">
+					<img src="img/introT.png" class="imgCenter" alt="Start Text">
 				</div>
 			</div>
-			<a href="#countTab" class="selector"><img src="img/proceed.png" class="imgCenter padding5" style="max-width:50%;"></a>
+			<a href="#countTab" class="selector"><img src="img/proceed.png" class="imgCenter padding5" alt="Proceed" style="max-width:50%;"></a>
 		</div>
 		<div class="tabs divContainer" id="countTab">
 			<p>Shake / Tap your phone till the timer ends</p>
 			<p>Timer : <span id="myTimer">30</span></p>
 			<h2>Counter : <span id="myCount">0</span></h2>
 			<div class="money">
-				<img src="img/moneyS.png" class="mDack">
-				<img src="img/money.png" class="mSingle">
+				<img src="img/moneyS.png" class="mDack" alt="Money">
+				<img src="img/money.png" class="mSingle" alt="Money">
 			</div>
 			<!-- Count Shakes -->
 		</div>
@@ -44,24 +44,24 @@
 			<!-- Fire Creckers -->
 			<div class="popUp">
 				<form name="dForm" id="dForm" method="POST">
-					<img src="img/wish.png" class="imgCenter padding10">
-					<img src="img/knowRank.png" class="imgCenter padding10">					
+					<img src="img/wish.png" class="imgCenter padding10" alt="Happy Diwali">
+					<img src="img/knowRank.png" class="imgCenter padding10" alt="Know Your Rank">
 					<input type="hidden" name="userType" id="userType" value="click">
 					<input type="hidden" name="userValue" id="userValue" value="0">
 					<input type="text" class="txt" name="name" id="name" value="" required placeholder="Name">
 					<ul>
 						<li><input type="submit" class="btn" name="userBtn" id="userBtn" value=""></li>
-						<li><a href="index.html" class="btn"><img src="img/replay.png" class="imgCenter"></a></li>
+						<li><a href="index.html" class="btn"><img src="img/replay.png" class="imgCenter" alt="Reply"></a></li>
 					</ul>
 				</form>
 			</div>
 		</div>
 		<div class="tabs divContainer" id="leaderTab">
 			<div class="introLogo">
-				<img src="img/game.png">
+				<img src="img/game.png" alt="Leaderboard">
 			</div>
 			<!-- Leader Board -->
-			<div id="reponse"><div class="myResult"><h1>Harshad</h1><h2>51 Clicks</h2><a href="index.html" class="finalReplay"><img src="img/replay.png" class="imgCenter"></a></div><ul class="scoreBoard"><li class="clearfix"><span>51 Click</span><p>Harshad</p></li><li class="clearfix"><span>51 Click</span><p>Harshad</p></li><li class="clearfix"><span>51 Click</span><p>Harshad</p></li><li class="clearfix"><span>51 Click</span><p>Harshad</p></li><li class="clearfix"><span>51 Click</span><p>Harshad</p></li></ul></div>
+			<div id="reponse"></div>
 		</div>
 	</div>	
 	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
