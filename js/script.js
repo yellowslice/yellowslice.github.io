@@ -1,7 +1,7 @@
 $('#dForm').on('submit',function(e){
 	e.preventDefault();
-	console.log('Button CLicked');
-	console.log($( this ).serialize());
+	// console.log('Button CLicked');
+	// console.log($( this ).serialize());
 	var myData;
 	$.ajax({
 		type: 'post',
@@ -27,14 +27,14 @@ $('.selector').on('click', function(e) {
     $(tab).addClass('active');
 	
 	if ($('#countTab').hasClass('active')) {
-		console.log('Starting Counter');
+		// console.log('Starting Counter');
 		timer = setTimeout(update, 1000);
 	}
 });
 
 function fnCounter(type){
 	cliks++;
-	console.log('Click'+cliks);
+	// console.log('Click'+cliks);
 	$("#myCount").text(cliks);
 	$('#userValue').val(cliks);
 	$('#userType').val(type);
@@ -56,13 +56,8 @@ $('#countTab').on('click', function(e) {
 	fnCounter('Click');
 });
 
-
-//update display
-
-//this allows for 'clearTimeout' if needed
-
 function update(){
-    console.log(count);
+    // console.log(count);
 	$("#myTimer").text(count);
 	if (count > 0){
 		count--;
@@ -72,7 +67,7 @@ function update(){
         $('#countTab').removeClass('active');
 		$('#fireTab').addClass('active');
 		var earn = Math.floor(cliks / 5) * 1000;
-		console.log(earn);
+		// console.log(earn);
 		$(".popUp").delay(earn).fadeIn(500);
     }
 }
