@@ -5,7 +5,7 @@ $('#dForm').on('submit',function(e){
 	var myData;
 	$.ajax({
 		type: 'post',
-		url: 'http://webnspice.com/projs/Diwali/shake.php',
+		url: 'https://sandeshpalkar.com/diwali/shake.php',
 		data : $(this).serialize(),
 		success: function (response) {
 			$(".tabs").removeClass('active');
