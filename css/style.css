@@ -249,4 +249,5 @@ img{
 
 @media only screen and (min-width: 600px) {
 	.padding10{padding:30px;}
+	.logo{left:auto;width:auto;}
 }
