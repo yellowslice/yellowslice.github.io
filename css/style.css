@@ -39,6 +39,7 @@ img{
 	right:0;
 	width:100%;
 	padding:10px;
+	z-index: 10000;
 }
 /* Tabs */
 .tabs{
