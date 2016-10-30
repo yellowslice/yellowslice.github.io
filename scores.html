@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Yellow Slice">    
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Diwali Game By Yellow Slice</title>
+	<meta name="description" content="Yellow Slice is a design studio in Mumbai, India. We specialise in Branding, UI (User Interface) , UX (User Experience), User Research &amp; Usability Testing.">
+	<meta name="author" content="Yellow Slice">
+	<!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+	<meta property="og:url"           content="https://yellowslice.github.io/" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Diwali Game By Yellow Slice" />
+	<meta property="og:description"   content="Yellow Slice is a design studio in Mumbai, India. We specialise in Branding, UI (User Interface) , UX (User Experience), User Research &amp; Usability Testing." />
+	<meta property="og:image"         content="https://yellowslice.github.io/img/image.png" />
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<style>
+		.scoreBoard{
+			display:block;
+			position:fixed;
+			bottom:0;
+			right:0;
+			width:100%;
+			clear:left;
+			z-index:1000;
+		}
+		.scoreBoard li{
+			float:left;
+			width:50%;
+			padding:0;
+			text-align:center;
+		}
+		.scoreBoard li a{
+			padding:10px 0;
+			display:block;
+			width:100%;
+			background:#000;
+			
+			color:#fff;
+			text-decoration:none;
+		}
+		iframe{
+			width:100%;
+			display:block;
+			border:none;
+			height:100%;
+		}
+	</style>
+	<a href="http://yellowslice.in" class="logo"><img src="img/logo.png" alt="Yellow Slice"></a>
+	<ul class="scoreBoard">
+		<li>
+			<a href="#tab2" class="selector">Shakes Score</a>
+		</li>
+		<li>
+			<a href="#tab1" class="selector">Clicks Score</a>
+		</li>
+	</ul>
+	<div class="full-page">
+		<div class="tabs divContainer active" id="tab2">
+			<iframe src="https://sandeshpalkar.com/diwali/shkaes.php"></iframe>
+		</div>
+		<div class="tabs divContainer" id="tab1">
+			<iframe src="https://sandeshpalkar.com/diwali/clicks.php"></iframe>
+		</div>
+	</div>	
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/shake.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
